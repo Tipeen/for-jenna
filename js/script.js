@@ -329,46 +329,9 @@ finalNext.addEventListener("click", () => {
 
 });
 
-const heartRain = document.getElementById("heartRain");
 
-heartRain.addEventListener("click", () => {
-
-    for (let i = 0; i < 60; i++) {
-
-        setTimeout(() => {
-
-            const heart = document.createElement("div");
-
-            heart.className = "heart";
-
-            heart.innerHTML = "❤️";
-
-            heart.style.left = Math.random() * 100 + "%";
-
-            heart.style.fontSize = (20 + Math.random() * 35) + "px";
-
-            heart.style.animationDuration = (3 + Math.random() * 3) + "s";
-
-            document.querySelector(".floating-hearts").appendChild(heart);
-
-            setTimeout(() => heart.remove(), 6000);
-
-        }, i * 60);
-
-    }
-
-});
 const backToScrapbook = document.getElementById("backToScrapbook");
-const nextReason = document.getElementById("nextReason");
 
-nextReason.addEventListener("click", () => {
-
-    reasonIndex = 0;
-    updateReason();
-
-    showPage(6);
-
-});
 
 backToScrapbook.addEventListener("click", () => {
 
@@ -429,32 +392,20 @@ toFinalPage.addEventListener("click", () => {
     showPage(10);
 
 });
+const hugPopup = document.getElementById("hugPopup");
+const closeHug = document.getElementById("closeHug");
+
+const heartRain = document.getElementById("heartRain");
 const heartRainFinal = document.getElementById("heartRainFinal");
 
+heartRain.addEventListener("click", () => {
+    hugPopup.style.display = "flex";
+});
+
 heartRainFinal.addEventListener("click", () => {
+    hugPopup.style.display = "flex";
+});
 
-    for (let i = 0; i < 80; i++) {
-
-        setTimeout(() => {
-
-            const heart = document.createElement("div");
-
-            heart.className = "heart";
-
-            heart.innerHTML = "❤️";
-
-            heart.style.left = Math.random() * 100 + "%";
-
-            heart.style.fontSize = (18 + Math.random() * 40) + "px";
-
-            heart.style.animationDuration = (3 + Math.random() * 2) + "s";
-
-            document.querySelector(".floating-hearts").appendChild(heart);
-
-            setTimeout(() => heart.remove(), 6000);
-
-        }, i * 50);
-
-    }
-
+closeHug.addEventListener("click", () => {
+    hugPopup.style.display = "none";
 });
