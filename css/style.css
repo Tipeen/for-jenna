@@ -1313,3 +1313,74 @@ FINAL PAGE
     transform: translateY(-4px);
 
 }
+
+.hug-popup {
+
+    position: fixed;
+    inset: 0;
+
+    background: rgba(0, 0, 0, .55);
+
+    display: none;
+
+    justify-content: center;
+    align-items: center;
+
+    z-index: 9999;
+
+}
+
+.hug-box {
+
+    width: 90%;
+    max-width: 380px;
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 25px;
+
+    text-align: center;
+
+}
+
+.hug-box img {
+
+    width: 220px;
+
+    margin-bottom: 20px;
+
+}
+
+.hug-box h2 {
+
+    color: #ff4f98;
+
+    margin-bottom: 15px;
+
+}
+
+.hug-box p {
+
+    line-height: 30px;
+
+    margin-bottom: 25px;
+
+}
+
+.hug-box button {
+
+    border: none;
+
+    background: #ff5ea8;
+
+    color: white;
+
+    padding: 15px 35px;
+
+    border-radius: 40px;
+
+    cursor: pointer;
+
+}
