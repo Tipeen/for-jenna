@@ -331,6 +331,22 @@ finalNext.addEventListener("click", () => {
 
 
 const backToScrapbook = document.getElementById("backToScrapbook");
+const nextReason = document.getElementById("nextReason");
+
+nextReason.addEventListener("click", () => {
+
+    reasonIndex = 0;
+    updateReason();
+
+    showPage(6);
+
+});
+
+backToScrapbook.addEventListener("click", () => {
+
+    showPage(4);
+
+});
 
 
 backToScrapbook.addEventListener("click", () => {
